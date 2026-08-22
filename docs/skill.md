@@ -1,13 +1,13 @@
 # Using the ARGUS Skill
 
-**Stable wrapper:** 0.4.3  
+**Stable wrapper:** 0.4.2  
 **Target protocol:** ARGUS V5.0.0
 
 The ARGUS Skill is an execution layer around the published protocol. It does not replace the protocol. If an instruction in the wrapper conflicts with the normative protocol, the protocol prevails.
 
 ## Installation
 
-Download `skill/V0.4.3/argus-0.4.3.zip` or the corresponding GitHub release asset, then import the ZIP through the platform's Skill or equivalent management interface.
+Download `skill/V0.4.2/argus-0.4.2.zip` or the corresponding GitHub release asset, then import the ZIP through the platform's Skill or equivalent management interface.
 
 Platform terminology and menu locations can change. The ARGUS website maintains the current end-user installation notes.
 
@@ -29,7 +29,7 @@ For an execution independent of previous analyses, use a fresh conversation and 
 
 ## Package contents
 
-The 0.4.3 archive contains:
+The 0.4.2 archive contains:
 
 - `argus/SKILL.md`
 - `argus/agents/openai.yaml`
@@ -42,6 +42,6 @@ The 0.4.3 archive contains:
 
 Revision 0.4.2 was tested on August 21, 2026 with ChatGPT 5.6 and Claude Opus 5 on a full ARGUS analysis of the same article. Both executions applied the wrapper's substantive corrections and reached the same ARGUS 7.c level.
 
-Revision 0.4.3 is a technical portability update for source and analyzed-object links. The packaged Skill was structurally validated before publication; no new protocol rule or analytical category was introduced.
+A minor presentation limitation remained on ChatGPT 5.6: the model could use a different Markdown marker for some bullet lists despite the output rule. This does not alter the analytical content.
 
 Execution quality still depends on the host environment: effective context, output capacity, document ingestion, access to external sources, and persistence of instructions over a long execution.
