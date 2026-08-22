@@ -3,7 +3,7 @@
 **ARGUS** — *Analyse Rigoureuse Guidée par un protocole Universel et Systématique* — est un protocole libre d’analyse critique des textes argumentatifs avec l’aide d’une intelligence artificielle.
 
 - **Version actuelle du protocole :** ARGUS V5.0.0
-- **Version actuelle du wrapper :** ARGUS Skill 0.4.2
+- **Version actuelle du wrapper :** ARGUS Skill 0.4.3
 - **Site :** https://www.argus-protocol.org
 - **Dépôt GitHub :** https://github.com/argus-analysis/argus
 - **Auteur :** François Vadrot
@@ -25,9 +25,9 @@ Le protocole est disponible dans six langues :
 
 La source française est la source normative embarquée dans le Skill actuel. Les traductions publiées reproduisent le même protocole V5.0.0 pour usage dans les langues correspondantes.
 
-## ARGUS Skill 0.4.2
+## ARGUS Skill 0.4.3
 
-Le wrapper stable destiné à ARGUS V5.0.0 se trouve dans [`skill/V0.4.2`](skill/V0.4.2/).
+Le wrapper stable destiné à ARGUS V5.0.0 se trouve dans [`skill/V0.4.3`](skill/V0.4.3/).
 
 Il contient le ZIP installable, le code source décompressé du Skill, le protocole normatif V5.0.0 en français, les règles techniques d’exécution et le gabarit de sortie.
 
@@ -48,7 +48,7 @@ Pour plusieurs textes liés :
 Les fichiers de publication sont recensés dans [`CHECKSUMS.sha256`](CHECKSUMS.sha256).
 
 - Source française normative V5.0.0 : `4da638b15145c5f13183cf5d9e6b9dfb4f503b425ba3f576eded8c9aed53ca85`
-- ZIP du Skill 0.4.2 : `43a274de86f983d07eabbdb2387f7cbb4b3bb870e1a858258b6e02bfaad64edf`
+- ZIP du Skill 0.4.3 : `a5d7b0bffeaff1717e6b58fafff1bf91cd68fdcc68eafc02aa9196af0c752f60`
 
 ## Licence
 
