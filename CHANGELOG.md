@@ -2,6 +2,14 @@
 
 This GitHub repository begins with the current stable public state of ARGUS. Earlier protocol history is documented on https://www.argus-protocol.org.
 
+## 2026-08-22 — ARGUS Skill 0.4.3
+
+- Technical portability update targeting ARGUS V5.0.0; the normative protocol is unchanged.
+- External source references use Markdown links such as `[S1](URL)` when a usable URL is available, while retaining plain `[S1]` for supplied pieces without a URL.
+- The output header can preserve the original or canonical URL of the analyzed object when it is explicitly available.
+- Terminal checks now verify portable source links and analyzed-object URLs before delivery.
+- The packaged Skill passed structural validation before publication.
+
 ## 2026-08-21 — ARGUS Protocol V5.0.0
 
 - Stable V5.0.0 protocol published in six languages.
