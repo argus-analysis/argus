@@ -2,6 +2,16 @@
 
 This GitHub repository begins with the current stable public state of ARGUS. Earlier protocol history is documented on https://www.argus-protocol.org.
 
+## 2026-08-26 — ARGUS Skill 0.5.0
+
+- Controlled migration from Skill 0.4.3 targeting ARGUS V5.0.0; the normative protocol is unchanged.
+- Clarifies neutral input: ARGUS does not require a user-supplied analytical question, hypothesis or prior orientation.
+- Adds execution metadata for model, host and execution regime.
+- Distinguishes wrapper execution from context-only execution.
+- Adds publication-layer rules for ARGUS Case Studies without creating a new analytical mode.
+- Adds a dedicated wrapper version history.
+- Migration passed the complete non-regression control set and final independent audit.
+
 ## 2026-08-22 — ARGUS Skill 0.4.3
 
 - Technical portability update targeting ARGUS V5.0.0; the normative protocol is unchanged.
