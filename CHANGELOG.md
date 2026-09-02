@@ -2,6 +2,21 @@
 
 This GitHub repository begins with the current stable public state of ARGUS. Earlier protocol history is documented on https://www.argus-protocol.org.
 
+## 2026-09-02 â€” ARGUS Protocol V5.1.0
+
+- Minor protocol release adding the modal constancy control without changing V5.0.0 categories, thresholds, proof standard or overall procedure.
+- Adds a Step 2 modal map and a Step 6 directional test for directional modal retraction.
+- Excludes consistent restraint, acknowledged revision and scope partition from defect findings.
+- Propagates the new control into Steps 7.a and 7.b; ARGUS Light remains unchanged and does not include the control.
+- Published in six languages; French remains the normative source.
+
+## 2026-09-02 â€” ARGUS Skill 0.6.0
+
+- Stable wrapper targeting ARGUS V5.1.0.
+- Formalizes analyst provenance as model, version/build and provider-labelled reasoning intensity, while retaining host and execution-regime metadata.
+- Adds restitution guidance for modal-constancy verdicts close to the acknowledged-revision / disguised-retraction boundary.
+- Final ZIP uses portable POSIX entry separators and was successfully accepted by Claude.
+- Canonical ZIP: 83,231 bytes; SHA-256 `949a375fc3a52b1c402e4026e843cb58a2a5d935253cf4fb3da6324f170ce817`.
 ## 2026-08-26 — ARGUS Skill 0.5.0
 
 - Controlled migration from Skill 0.4.3 targeting ARGUS V5.0.0; the normative protocol is unchanged.

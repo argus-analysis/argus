@@ -1,70 +1,70 @@
-# First GitHub publication
+# Publishing ARGUS releases
 
-Organization: `argus-analysis`
+- Organization: `argus-analysis`
+- Repository: `argus`
 
-Repository name: `argus`
+The protocol and the Skill wrapper have independent version lines and therefore use separate tags and separate GitHub Releases.
 
-## 1. Create the repository
+## 1. Prepare repository contents
 
-Create an empty public GitHub repository named `argus` in the `argus-analysis` organization. Do not initialize it with another README or licence if you are uploading this prepared tree as-is.
+For a protocol release `Vx.y.z`:
 
-## 2. Publish this tree
+- add the six audited protocol Markdown files under `protocol/Vx.y.z/`;
+- add `releases/protocol-vx.y.z.md`;
+- update the current-version references in `README.md`, `README.fr.md`, `CHANGELOG.md`, `CITATION.cff` and `docs/versioning.md` as appropriate;
+- create the six-language release archive `ARGUS-Protocol-Vx.y.z-Markdown.zip` and its `.sha256` file.
 
-Upload or push the complete contents of this repository root.
+For a Skill release `a.b.c`:
 
-Suggested initial commit message:
+- add the unpacked canonical package under `skill/Va.b.c/argus/`;
+- add the exact validated ZIP under `skill/Va.b.c/`;
+- add `releases/skill-va.b.c.md`;
+- update `README.md`, `README.fr.md`, `CHANGELOG.md`, `docs/skill.md` and `docs/versioning.md` as appropriate;
+- publish the same validated ZIP as the GitHub Release asset, together with its `.sha256` file.
 
-`Publish ARGUS V5.0.0 and Skill 0.4.2`
+Regenerate `CHECKSUMS.sha256` after all repository files have reached their final content.
 
-Suggested repository description:
+## 2. Review before publishing
 
-`Open protocol for AI-assisted critical analysis of argumentative texts. ARGUS V5.0.0 · Skill 0.4.2.`
+Before any remote write:
 
-Suggested website field:
+- verify the canonical protocol and wrapper hashes;
+- verify that the wrapper-embedded normative protocol is byte-identical to the published normative French source;
+- inspect the complete Git diff;
+- confirm that older protocol and Skill directories remain unchanged;
+- confirm that release ZIP entry names use portable `/` separators.
 
-`https://www.argus-protocol.org`
+## 3. Commit and merge
 
-## 3. Create the protocol release
+Prepare releases on a dedicated branch, for example:
 
-Tag: `protocol-v5.0.0`  
-Title: `ARGUS Protocol V5.0.0`
+`release/v5.1.0-wrapper-0.6.0`
 
-Use `releases/protocol-v5.0.0.md` as the release description.
+Use one atomic repository commit when the protocol and wrapper are being published as a coordinated stable pair. Merge that commit to `main` after review.
 
-Prepared release asset:
+## 4. Tags
 
-`ARGUS-Protocol-V5.0.0-Markdown.zip`
+Protocol tags use:
 
-## 4. Create the Skill release
+`protocol-vx.y.z`
 
-Tag: `skill-v0.4.2`  
-Title: `ARGUS Skill 0.4.2`
+Skill tags use:
 
-Use `releases/skill-v0.4.2.md` as the release description.
+`skill-va.b.c`
 
-Prepared release asset:
+Tags should point to the reviewed release commit on `main`.
 
-`argus-0.4.2.zip`
+## 5. GitHub Releases
 
-The Skill ZIP must retain this SHA-256:
+Create two GitHub Releases when a protocol and wrapper are published together:
 
-`43a274de86f983d07eabbdb2387f7cbb4b3bb870e1a858258b6e02bfaad64edf`
+- **ARGUS Protocol Vx.y.z** â€” body from `releases/protocol-vx.y.z.md`; attach the protocol Markdown ZIP and `.sha256`.
+- **ARGUS Skill a.b.c** â€” body from `releases/skill-va.b.c.md`; attach the exact validated wrapper ZIP and `.sha256`.
 
-## 5. Git command equivalent
+Never rebuild the wrapper ZIP during GitHub publication: the release asset must be the same canonical archive that was validated before publication.
 
-After creating the empty remote repository:
+## Current stable pair
 
-```bash
-git init
-git add .
-git commit -m "Publish ARGUS V5.0.0 and Skill 0.4.2"
-git branch -M main
-git remote add origin https://github.com/argus-analysis/argus.git
-git push -u origin main
-
-git tag -a protocol-v5.0.0 -m "ARGUS Protocol V5.0.0"
-git tag -a skill-v0.4.2 -m "ARGUS Skill 0.4.2"
-git push origin protocol-v5.0.0 skill-v0.4.2
-```
-
-Create the two GitHub Releases from those tags and attach the corresponding prepared asset.
+- Protocol: ARGUS V5.1.0
+- Skill wrapper: ARGUS Skill 0.6.0
+- Website: https://www.argus-protocol.org
