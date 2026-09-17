@@ -1,14 +1,14 @@
 # Protocole ARGUS
 
-**ARGUS** â€” *Analyse Rigoureuse GuidÃ©e par un protocole Universel et SystÃ©matique* â€” est un protocole libre dâ€™analyse critique des textes argumentatifs avec lâ€™aide dâ€™une intelligence artificielle.
+**ARGUS** — *Analyse Rigoureuse Guidée par un protocole Universel et Systématique* — est un protocole libre d’analyse critique des textes argumentatifs avec l’aide d’une intelligence artificielle.
 
 - **Version actuelle du protocole :** ARGUS V5.1.0
-- **Version actuelle du wrapper :** ARGUS Skill 0.6.0
+- **Version actuelle du wrapper :** ARGUS Skill 1.0.0
 - **Site :** https://www.argus-protocol.org
-- **DÃ©pÃ´t GitHub :** https://github.com/argus-analysis/argus
-- **Auteur :** FranÃ§ois Vadrot
+- **Dépôt GitHub :** https://github.com/argus-analysis/argus
+- **Auteur :** François Vadrot
 
-Le protocole et le Skill ont des **numÃ©rotations distinctes**. Le Skill est une couche dâ€™exÃ©cution destinÃ©e Ã  faciliter lâ€™appel du protocole sur les plateformes compatibles ; il ne remplace ni ne redÃ©finit le protocole. **ARGUS V5.1.0 demeure la rÃ©fÃ©rence normative.**
+Le protocole et le Skill ont des **numérotations distinctes**. Le Skill est une couche d’exécution destinée à faciliter l’appel du protocole sur les plateformes compatibles ; il ne remplace ni ne redéfinit le protocole. **ARGUS V5.1.0 demeure la référence normative.**
 
 ## Protocole V5.1.0
 
@@ -16,44 +16,50 @@ Le protocole est disponible dans six langues :
 
 | Langue | Source |
 |---|---|
-| FranÃ§ais | [argus-protocol-fr.md](protocol/V5.1.0/argus-protocol-fr.md) |
+| Français | [argus-protocol-fr.md](protocol/V5.1.0/argus-protocol-fr.md) |
 | English | [argus-protocol-en.md](protocol/V5.1.0/argus-protocol-en.md) |
-| EspaÃ±ol | [argus-protocol-es.md](protocol/V5.1.0/argus-protocol-es.md) |
+| Español | [argus-protocol-es.md](protocol/V5.1.0/argus-protocol-es.md) |
 | Deutsch | [argus-protocol-de.md](protocol/V5.1.0/argus-protocol-de.md) |
 | Italiano | [argus-protocol-it.md](protocol/V5.1.0/argus-protocol-it.md) |
-| PortuguÃªs | [argus-protocol-pt.md](protocol/V5.1.0/argus-protocol-pt.md) |
+| Português | [argus-protocol-pt.md](protocol/V5.1.0/argus-protocol-pt.md) |
 
-La source franÃ§aise est normative. Les cinq autres fichiers sont des traductions auditÃ©es du mÃªme protocole V5.1.0.
+La source française est normative. Les cinq autres fichiers sont des traductions auditées du même protocole V5.1.0.
 
-V5.1.0 ajoute le **contrÃ´le de constance modale**, test directionnel de la rÃ©tractation modale : une mÃªme proposition portante est posÃ©e fortement lÃ  oÃ¹ elle accomplit le travail argumentatif et affaiblie lÃ  oÃ¹ lâ€™engagement fort aurait un coÃ»t. Les catÃ©gories existantes, les seuils, la norme de preuve et la procÃ©dure dâ€™ensemble de V5.0.0 restent inchangÃ©s.
+V5.1.0 ajoute le **contrôle de constance modale**, test directionnel de la rétractation modale : une même proposition portante est posée fortement là où elle accomplit le travail argumentatif et affaiblie là où l’engagement fort aurait un coût. Les catégories existantes, les seuils, la norme de preuve et la procédure d’ensemble de V5.0.0 restent inchangés.
 
-## ARGUS Skill 0.6.0
+## ARGUS Skill 1.0.0
 
-Le wrapper stable destinÃ© Ã  ARGUS V5.1.0 se trouve dans [`skill/V0.6.0`](skill/V0.6.0/).
+Le wrapper stable destiné à ARGUS V5.1.0 se trouve dans [`skill/V1.0.0`](skill/V1.0.0/).
 
-Il contient le ZIP installable [`argus-wrapper-v0.6.0.zip`](skill/V0.6.0/argus-wrapper-v0.6.0.zip), le code source dÃ©compressÃ© du Skill, le protocole normatif V5.1.0 en franÃ§ais, les rÃ¨gles techniques dâ€™exÃ©cution, le gabarit de sortie et un historique propre des versions du wrapper.
+Il contient le ZIP installable [`argus-wrapper-v1.0.0.zip`](skill/V1.0.0/argus-wrapper-v1.0.0.zip), le code source décompressé du Skill, le protocole normatif V5.1.0 en français, les règles techniques d’exécution, le gabarit de sortie et un historique propre des versions du wrapper.
 
-La rÃ©vision 0.6.0 met Ã  jour la cible vers V5.1.0 et formalise la provenance de lâ€™analyste par trois champs â€” modÃ¨le, version/build et intensitÃ© de raisonnement au label du fournisseur â€” tout en conservant les mÃ©tadonnÃ©es hÃ´te et rÃ©gime dâ€™exÃ©cution.
+La version 1.0.0 fixe pour la première fois le périmètre public stabilisé du **wrapper générique d’exécution ARGUS**. Il reste indépendant de tout site et de tout workflow éditorial ou de publication. Les conventions propres aux Case Studies et aux pipelines éditoriaux relèvent d’outils séparés.
 
-Commande minimale aprÃ¨s installation :
+Le durcissement 1.0.0 impose aussi la propagation des corrections de l’étape 8 jusqu’au jugement final de 7.c, explicite le seuil 2 → 3 en termes de convergence effective plutôt que d’accumulation de défauts, et préserve entre passes les constats explicitement figés sauf apparition d’un élément matériel nouveau identifié.
+
+La branche expérimentale 0.7.0 n’a jamais été publiée comme successeur stable de 0.6.0 ; son travail propre à la publication a été séparé avant 1.0.0.
+
+Commande minimale après installation :
 
 > Analyse ce texte avec ARGUS.
 
-Pour une exÃ©cution courte :
+Pour une exécution courte :
 
 > Analyse ce texte avec ARGUS Light.
 
-Pour plusieurs textes liÃ©s :
+Pour plusieurs textes liés :
 
 > Analyse ces textes comme un corpus avec ARGUS.
 
-## IntÃ©gritÃ©
+Voir [Utilisation du Skill ARGUS](docs/skill.md) pour les détails et limites connues.
 
-Les fichiers de publication sont recensÃ©s dans [`CHECKSUMS.sha256`](CHECKSUMS.sha256).
+## Intégrité
 
-- Source franÃ§aise normative V5.1.0 : `4d4929996358cd1359d0349c3cee93c8e54d39a4ca5f3143861b2bff8dc7feee`
-- ZIP du Skill 0.6.0 : `949a375fc3a52b1c402e4026e843cb58a2a5d935253cf4fb3da6324f170ce817`
+Les fichiers de publication sont recensés dans [`CHECKSUMS.sha256`](CHECKSUMS.sha256).
+
+- Source française normative V5.1.0 : `4d4929996358cd1359d0349c3cee93c8e54d39a4ca5f3143861b2bff8dc7feee`
+- ZIP du Skill 1.0.0 : `8e48404edfc95371191825ca77a06c5ce7b62dba71aa85aff415dd2e6a321cef`
 
 ## Licence
 
-Le protocole ARGUS est publiÃ© sous **Creative Commons Attribution - Partage dans les MÃªmes Conditions 4.0 International (CC BY-SA 4.0)**. Voir [LICENSE.md](LICENSE.md).
+Le protocole ARGUS est publié sous **Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)**. Voir [LICENSE.md](LICENSE.md).
