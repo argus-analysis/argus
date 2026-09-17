@@ -38,9 +38,9 @@ Before any remote write:
 
 Prepare releases on a dedicated branch, for example:
 
-`release/v5.1.0-wrapper-0.6.0`
+`release/wrapper-1.0.0`
 
-Use one atomic repository commit when the protocol and wrapper are being published as a coordinated stable pair. Merge that commit to `main` after review.
+Use one atomic repository commit for a reviewed release state. Merge that commit to `main` after review.
 
 ## 4. Tags
 
@@ -58,13 +58,15 @@ Tags should point to the reviewed release commit on `main`.
 
 Create two GitHub Releases when a protocol and wrapper are published together:
 
-- **ARGUS Protocol Vx.y.z** â€” body from `releases/protocol-vx.y.z.md`; attach the protocol Markdown ZIP and `.sha256`.
-- **ARGUS Skill a.b.c** â€” body from `releases/skill-va.b.c.md`; attach the exact validated wrapper ZIP and `.sha256`.
+- **ARGUS Protocol Vx.y.z** — body from `releases/protocol-vx.y.z.md`; attach the protocol Markdown ZIP and `.sha256`.
+- **ARGUS Skill a.b.c** — body from `releases/skill-va.b.c.md`; attach the exact validated wrapper ZIP and `.sha256`.
+
+When only the wrapper changes, create only the corresponding Skill release; do not create a new protocol release or tag.
 
 Never rebuild the wrapper ZIP during GitHub publication: the release asset must be the same canonical archive that was validated before publication.
 
 ## Current stable pair
 
 - Protocol: ARGUS V5.1.0
-- Skill wrapper: ARGUS Skill 0.6.0
+- Skill wrapper: ARGUS Skill 1.0.0
 - Website: https://www.argus-protocol.org
